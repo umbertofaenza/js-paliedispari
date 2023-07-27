@@ -28,9 +28,18 @@ if (numbersSum % 2 == 0) {
   numbersSum = "dispari";
 }
 
+// Stampo tutto per chiarezza
+console.log("Scelta utente: " + userChoiceInput);
+console.log("Numero utente: " + userNumInput);
+console.log("Numero computer: " + randomNumber);
+console.log("Somma: " + numbersSum);
+
 // SE l'input dell'utente è uguale al valore della somma
-
-// stampo utente vincitore
-// ALTRIMENTI
-
-// stampo computer vincitore
+if (userChoiceInput == numbersSum) {
+  // stampo utente vincitore
+  console.log("Utente vince");
+  // ALTRIMENTI
+} else {
+  // stampo computer vincitore
+  console.log("Computer vince");
+}
