@@ -5,6 +5,12 @@ const userChoiceInput = prompt("Pari o dispari?");
 const userNumInput = prompt("Inserisci un numero da 1 a 5");
 
 // Creo una funzione che generi un numero da un minimo ad un massimo
+function getRandomNumber(min, max, lastIncluded = true) {
+  if (lastIncluded) max++;
+
+  const randomNumber = Math.floor(Math.random() * (max - min)) + min;
+  return randomNumber;
+}
 
 // Invoco la funzione con parametri 1 e 5 e salvo il numero generato in una variabile
 
