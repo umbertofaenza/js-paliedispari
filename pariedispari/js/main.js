@@ -2,7 +2,7 @@
 const userChoiceInput = prompt("Pari o dispari?");
 
 // Chiedo all'utente un numero da 1 a 5
-const userNumInput = prompt("Inserisci un numero da 1 a 5");
+const userNumInput = parseInt(prompt("Inserisci un numero da 1 a 5"));
 
 // Creo una funzione che generi un numero da un minimo ad un massimo
 function getRandomNumber(min, max, lastIncluded = true) {
