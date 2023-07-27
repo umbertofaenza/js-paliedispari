@@ -13,6 +13,7 @@ function getRandomNumber(min, max, lastIncluded = true) {
 }
 
 // Invoco la funzione con parametri 1 e 5 e salvo il numero generato in una variabile
+const randomNumber = getRandomNumber(1, 5);
 
 // Dichiaro una variabile somma
 
