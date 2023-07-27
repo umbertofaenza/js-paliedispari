@@ -7,7 +7,7 @@ function reverseString(string) {
   let reversedString = "";
 
   // ciclo con contatore che parte dalla fine (lunghezza) della parola fino a 0, e che ad ogni giro aggiunge la lettera corrente alla variabile sopra
-  for (let i = string.length; i >= 0; i--) {
+  for (let i = string.length - 1; i >= 0; i--) {
     reversedString += string[i];
   }
 
