@@ -15,9 +15,8 @@ function getRandomNumber(min, max, lastIncluded = true) {
 // Invoco la funzione con parametri 1 e 5 e salvo il numero generato in una variabile
 const randomNumber = getRandomNumber(1, 5);
 
-// Dichiaro una variabile somma
-
-// Sommo il numero inserito dall'utente e quello generato
+// Dichiaro una variabile somma e sommo il numero inserito dall'utente e quello generato
+const numbersSum = userNumInput + randomNumber;
 
 // SE la somma divisa per 2 dà resto 0
 
