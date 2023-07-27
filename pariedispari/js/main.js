@@ -18,15 +18,17 @@ const randomNumber = getRandomNumber(1, 5);
 // Dichiaro una variabile somma e sommo il numero inserito dall'utente e quello generato
 let numbersSum = userNumInput + randomNumber;
 
-// SE la somma divisa per 2 dà resto 0
-if (numbersSum % 2 == 0) {
-  // do alla somma valore "pari"
-  numbersSum = "pari";
-  // ALTRIMENTI
-} else {
-  // do alla somma valore "dispari"
-  numbersSum = "dispari";
+// Creo una funzione che stabilisca se un numero è pari o dispari
+function oddOrEven(number) {
+  if (number % 2 == 0) {
+    number = "pari";
+  } else {
+    number = "dispari";
+  }
 }
+
+// Invoco la funzione con parametro somma
+const numbersSumValue = oddOrEven(numbersSum);
 
 // Stampo tutto per chiarezza
 console.log("Scelta utente: " + userChoiceInput);
