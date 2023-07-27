@@ -18,9 +18,14 @@ function reverseString(string) {
 // Salvo la parola al rovescio in una variabile che invoca la funzione
 const reversedWord = reverseString(userWord);
 
+// stampo le due parole per chiarezza
+console.log("Parola inserita: " + userWord);
+
+console.log("Parola al rovescio: " + reversedWord);
+
 // SE la parola al rovescio è uguale alla parola inserita dall'utente
-
-// stampo: la parola è palindroma
-// ALTRIMENTI
-
-// stampo: la parola non è palindroma
+reversedWord == userWord
+  ? // stampo: la parola è palindroma
+    console.log("Palindroma!")
+  : // ALTRIMENTI stampo: la parola non è palindroma
+    console.log("Non palindroma.");
