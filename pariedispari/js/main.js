@@ -16,16 +16,18 @@ function getRandomNumber(min, max, lastIncluded = true) {
 const randomNumber = getRandomNumber(1, 5);
 
 // Dichiaro una variabile somma e sommo il numero inserito dall'utente e quello generato
-const numbersSum = userNumInput + randomNumber;
+let numbersSum = userNumInput + randomNumber;
 
 // SE la somma divisa per 2 dà resto 0
+if (numbersSum % 2 == 0) {
+  // do alla somma valore "pari"
+  numbersSum = "pari";
+  // ALTRIMENTI
+} else {
+  // do alla somma valore "dispari"
+  numbersSum = "dispari";
+}
 
-// il numero è pari
-// do alla somma valore "pari"
-// ALTRIMENTI
-
-// il numero è dispari
-// do alla somma valore "dispari"
 // SE l'input dell'utente è uguale al valore della somma
 
 // stampo utente vincitore
