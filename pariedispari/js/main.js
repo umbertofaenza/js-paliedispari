@@ -34,5 +34,7 @@ console.log("Somma: " + numbersSum);
 
 // SE l'input dell'utente è uguale al valore della somma
 userChoiceInput == numbersSum
-  ? console.log("Utente vince")
-  : console.log("Computer vince");
+  ? // stampo utente vincitore
+    console.log("Utente vince")
+  : // ALTRIMENTI stampo computer vincitore
+    console.log("Computer vince");
