@@ -20,11 +20,7 @@ let numbersSum = userNumInput + randomNumber;
 
 // Creo una funzione che stabilisca se un numero è pari o dispari
 function oddOrEven(number) {
-  if (number % 2 == 0) {
-    number = "pari";
-  } else {
-    number = "dispari";
-  }
+  number % 2 == 0 ? "pari" : "dispari";
 }
 
 // Invoco la funzione con parametro somma
@@ -37,11 +33,6 @@ console.log("Numero computer: " + randomNumber);
 console.log("Somma: " + numbersSum);
 
 // SE l'input dell'utente è uguale al valore della somma
-if (userChoiceInput == numbersSum) {
-  // stampo utente vincitore
-  console.log("Utente vince");
-  // ALTRIMENTI
-} else {
-  // stampo computer vincitore
-  console.log("Computer vince");
-}
+userChoiceInput == numbersSum
+  ? console.log("Utente vince")
+  : console.log("Computer vince");
