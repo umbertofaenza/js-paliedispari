@@ -16,6 +16,7 @@ function reverseString(string) {
 }
 
 // Salvo la parola al rovescio in una variabile che invoca la funzione
+const reversedWord = reverseString(userWord);
 
 // SE la parola al rovescio è uguale alla parola inserita dall'utente
 
